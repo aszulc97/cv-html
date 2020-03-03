@@ -1,0 +1,39 @@
+body{
+  background-color: pink;
+  font-family: courier;
+  text-align: center;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.three{
+  color: white;
+  column-count: 3;
+}
+
+div.two_columns{
+  column-count: 2;
+  column-rule-style:dotted;
+}
+
+div.left_column{
+  width: 50%;
+  break-after: column;
+  /*float:left;
+}*/
+}
+
+div.right_column{
+  width: 50%;
+  break-before: column;
+  /*float: right;*/
+}
+
+div.lang{
+  break-inside: avoid-column;
+  break-after: column;
+}
