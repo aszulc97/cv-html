@@ -1,18 +1,35 @@
 body{
-  background-color: pink;
-  font-family: courier;
+  background-color: #ebf0fa;
+  font-family: calibri;
   text-align: center;
 }
 
-img{
+img.portrait{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  width: 160px;
+}
+
+img.icon{
+  float: left;
+  margin-left: 40px;
+}
+
+h1{
+  color: white;
+}
+
+h5{
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 div.three{
   color: white;
-  column-count: 3;
+  font-family: courier;
+  column-count: 3
 }
 
 div.two_columns{
@@ -36,4 +53,17 @@ div.right_column{
 div.lang{
   break-inside: avoid-column;
   break-after: column;
+}
+
+div.whole_cv{
+  background-color: #ffffff;
+  height: 900px;
+  width: 900px;
+  margin-left:  500px;
+}
+
+div.header{
+  background-color: #314051;
+  height: 280px;
+  width: 900px;
 }
