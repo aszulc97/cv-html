@@ -1,7 +1,7 @@
 body{
   background-color: #ebf0fa;
   font-family: calibri;
-  text-align: center;
+
 }
 
 img.portrait{
@@ -19,6 +19,7 @@ img.icon{
 
 h1{
   color: white;
+  text-align: center;
 }
 
 h5{
@@ -29,30 +30,31 @@ h5{
 div.three{
   color: white;
   font-family: courier;
-  column-count: 3
+  column-count: 3;
+  text-align: left;
 }
 
 div.two_columns{
-  column-count: 2;
-  column-rule-style:dotted;
+  display: flex;
+  padding: 10px;
+  text-align: left;
 }
 
 div.left_column{
-  width: 50%;
+  flex: 1;
   break-after: column;
+  padding: 15px;
+  border: 1px #ccc solid;
   /*float:left;
 }*/
 }
 
 div.right_column{
-  width: 50%;
+  flex: 2;
   break-before: column;
+  padding: 15px;
+  border: 1px #ccc solid;
   /*float: right;*/
-}
-
-div.lang{
-  break-inside: avoid-column;
-  break-after: column;
 }
 
 div.whole_cv{
