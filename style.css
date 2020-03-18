@@ -1,15 +1,15 @@
 body{
   background-color: #ebf0fa;
   font-family: calibri;
-
+  line-height: normal;
 }
 
 img.portrait{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   width: 160px;
+  padding: 5px;
 }
 
 img.icon{
@@ -17,14 +17,37 @@ img.icon{
   margin-left: 40px;
 }
 
+p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p.skill{
+  margin-top: 10px;
+}
+
 h1{
   color: white;
   text-align: center;
+  margin-block-start: 5px;
+}
+
+h3{
+  margin-bottom: 10px;
 }
 
 h5{
   margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-end: 5px;
+}
+
+h5.header{
+  margin-left: 70px;
+}
+
+ul{
+  margin-block-start: 0;
+  margin-block-end: 50px;
 }
 
 div.three{
@@ -36,31 +59,28 @@ div.three{
 
 div.two_columns{
   display: flex;
-  padding: 10px;
   text-align: left;
+  height: calc(100vh - 280px)
 }
 
 div.left_column{
-  flex: 1;
+  flex: 7;
   break-after: column;
   padding: 15px;
   border: 1px #ccc solid;
-  /*float:left;
-}*/
+  background-color: #f5f8ff;
 }
 
 div.right_column{
-  flex: 2;
+  flex: 17;
   break-before: column;
   padding: 15px;
   border: 1px #ccc solid;
-  /*float: right;*/
 }
 
 div.whole_cv{
   background-color: #ffffff;
-  min-height: 1500px;
-  height: 100%;
+  height: 100vh;
   width: 900px;
   margin-left:auto;
   margin-right:auto;
